@@ -1,0 +1,30 @@
+    .error-container {
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .error-container h1 {
+      font-size: 6rem;
+      color: #ff5252;
+    }
+
+    .error-container p {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      color: #ccc;
+    }
+
+    .error-container a {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #00bcd4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .error-container a:hover {
+      background-color: #0097a7;
+    }

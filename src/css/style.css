@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background: #1f1f1f;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.profile {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00bfff;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.tech-icons div {
+  background: #2a2a2a;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.tech-icons div:hover {
+  transform: scale(1.05);
+}
+
+.tech-icons i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.tech-icons span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+
+h2 {
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.grid span {
+  background: #2a2a2a;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #1f1f1f;
+  margin-top: 2rem;
+}
+
