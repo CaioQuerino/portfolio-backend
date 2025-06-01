@@ -159,3 +159,11 @@ footer {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   background: linear-gradient(135deg, #005fa3, #003e73);
 }
+
+
+.icon-img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+  filter: grayscale(1);
+}
