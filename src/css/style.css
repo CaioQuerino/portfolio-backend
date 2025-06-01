@@ -161,6 +161,13 @@ footer {
 }
 
 
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
 .icon-img {
   width: 32px;
   height: 32px;
