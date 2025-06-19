@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+(<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
@@ -29,23 +29,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./src/images/favicon-32x32.png" />
 
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3B82F6',
-                        secondary: '#1E40AF',
-                        dark: '#1F2937',
-                        light: '#F3F4F6',
-                    }
-                }
-            }
-        }
-    </script>
-
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="./src/css/style.css" />
 
@@ -53,146 +36,112 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
-<body class="bg-gray-100 text-gray-800 font-sans">
-    <header class="profile bg-white shadow-md rounded-lg p-6 max-w-4xl mx-auto my-8 text-center">
-        <img src="./src/images/Caio.png" alt="Foto de Caio Querino" class="profile-photo w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-        <h1 class="text-3xl font-bold text-primary mb-2">Caio Querino</h1>
-        <h2 class="text-xl text-secondary mb-4">Desenvolvedor Backend e Fullstack em formação</h2>
-        <p class="text-gray-600">Desenvolvedor em formação, apaixonado por tecnologia e backend.</p>
+<body>
+    <header class="profile">
+        <img src="./src/images/Caio.png" alt="Foto de Caio Querino" class="profile-photo">
+        <h1>Caio Querino</h1>
+        <h2>Desenvolvedor Backend e Fullstack em formação</h2>
+        <p>Desenvolvedor em formação, apaixonado por tecnologia e backend.</p>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 space-y-8">
-        <section class="about bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-primary mb-4">Sobre Mim</h2>
-            <p class="mb-4">Meu primeiro contato com programação foi em 2024. Desde então, decidi seguir na área de T.I. com foco em desenvolvimento backend, mas também possuo conhecimentos em frontend.</p>
-            <div class="flex flex-wrap gap-4">
-                <a href="./src/docs/curriculo-caio-querino.pdf" class="btn-curriculo bg-primary hover:bg-secondary text-white px-4 py-2 rounded-md transition duration-300 flex items-center" download>
+    <main>
+        <section class="about">
+            <h2>Sobre Mim</h2>
+            <p>Meu primeiro contato com programação foi em 2024. Desde então, decidi seguir na área de T.I. com foco em desenvolvimento backend, mas também possuo conhecimentos em frontend.</p>
+            <div>
+                <a href="./src/docs/curriculo-caio-querino.pdf" class="btn-curriculo" download>
                     <i class="devicon-pdf-plain" aria-hidden="true" style="margin-right: 0.5rem;"></i>
                     Baixar Currículo (PDF)
                 </a>
+            </div>
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScNsUaBUUbgqly91SukKfoQiRZdQj7cVDSjIdfF6IuCEdtwlg/viewform" class="btn-curriculo bg-primary hover:bg-secondary text-white px-4 py-2 rounded-md transition duration-300" target="_blank">Envie os requisitos do seu projeto</a>
+            <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScNsUaBUUbgqly91SukKfoQiRZdQj7cVDSjIdfF6IuCEdtwlg/viewform" class="btn-curriculo" target="_blank">Envie os requisitos do seu projeto</a>
             </div>
         </section>
 
-        <section class="skills bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-primary mb-6">Tecnologias</h2>
-            <div class="tech-icons grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                <div class="flex flex-col items-center">
-                    <i class="devicon-nodejs-plain colored text-4xl mb-2" title="Node.js" aria-label="Node.js"></i>
-                    <span class="text-sm">Node.js</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-express-original colored text-4xl mb-2" title="Express.js" aria-label="Express.js"></i>
-                    <span class="text-sm">Express.js</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://fastify.dev/img/logos/fastify-white.svg" title="Fastify" alt="Fastify logo" class="fastify-icon h-8 mb-2" />
-                    <span class="text-sm">Fastify</span>
+        <section class="skills">
+            <h2>Tecnologias</h2>
+            <div class="tech-icons">
+                <div><i class="devicon-nodejs-plain colored" title="Node.js" aria-label="Node.js"></i><span>Node.js</span></div>
+                <div><i class="devicon-express-original colored" title="Express.js" aria-label="Express.js"></i><span>Express.js</span></div>
+                <div class="tech-icon">
+                    <img src="https://fastify.dev/img/logos/fastify-white.svg" title="Fastify" alt="Fastify logo" class="fastify-icon" />
+                    <span>Fastify</span>
                 </div>
 
-                <div class="flex flex-col items-center">
-                    <i class="devicon-php-plain colored text-4xl mb-2" title="PHP" aria-label="PHP"></i>
-                    <span class="text-sm">PHP</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-sequelize-plain colored text-4xl mb-2" title="Sequelize" aria-label="Sequelize"></i>
-                    <span class="text-sm">Sequelize</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://www.prisma.io/images/favicon-32x32.png" alt="Prisma" title="Prisma" class="icon-img h-8 mb-2" />
-                    <span class="text-sm">Prisma</span>
+                <div><i class="devicon-php-plain colored" title="PHP" aria-label="PHP"></i><span>PHP</span></div>
+                <div><i class="devicon-sequelize-plain colored" title="Sequelize" aria-label="Sequelize"></i><span>Sequelize</span></div>
+                <div class="tech-icon">
+                    <img src="https://www.prisma.io/images/favicon-32x32.png" alt="Prisma" title="Prisma" class="icon-img" />
+                    <span>Prisma</span>
                 </div>               
-                <div class="flex flex-col items-center">
-                    <i class="devicon-mysql-plain colored text-4xl mb-2" title="MySQL" aria-label="MySQL"></i>
-                    <span class="text-sm">MySQL</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-postgresql-plain colored text-4xl mb-2" title="PostgreSQL" aria-label="PostgreSQL"></i>
-                    <span class="text-sm">PostgreSQL</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-react-original colored text-4xl mb-2" title="React.js" aria-label="React.js"></i>
-                    <span class="text-sm">React.js</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="data:image/webp;base64,UklGRjIBAABXRUJQVlA4WAoAAAAQAAAAEQAAEQAAQUxQSHkAAAARcBDZttMcupwqIj0x+kFEk5KefAEwnw7PQkRMAEBwzp9t+8ouPstJbfpFU4ULh1+/Ue+A9Ndv/kcERS+svLORmLPqxeopu7eyppG1D9lTyfKTkXQXr9zU9X3tE+otfa9jYKe36D1YEFdmyVQJYFngX7Jn09zVLQAsAFZQOCCSAAAAMAQAnQEqEgASAD6RKKRSJaGlpZQAsBIJaQAEMq+QL5VDCP/zTtMqmTQAAP78RLP6uat3/5Nf/w157ZeKTEDv7Kj7/7Nh4l0LOCMjf5pJlcC+nNjyMfykRGt6/9X23yv/x3J6yC6HdqD9Pv/ONrmVpko9gKL4+Vb63/IQ9QFqF5z5QK732KZIKTB7/99MnV/gAAA=" alt="Next.js" title="Next.js" class="icon-img h-8 mb-2" />
-                    <span class="text-sm">Next.js</span>
+                <div><i class="devicon-mysql-plain colored" title="MySQL" aria-label="MySQL"></i><span>MySQL</span></div>
+                <div><i class="devicon-postgresql-plain colored" title="PostgreSQL" aria-label="PostgreSQL"></i><span>PostgreSQL</span></div>
+                <div><i class="devicon-react-original colored" title="React.js" aria-label="React.js"></i><span>React.js</span></div>
+                <div class="tech-icon">
+                    <img src="data:image/webp;base64,UklGRjIBAABXRUJQVlA4WAoAAAAQAAAAEQAAEQAAQUxQSHkAAAARcBDZttMcupwqIj0x+kFEk5KefAEwnw7PQkRMAEBwzp9t+8ouPstJbfpFU4ULh1+/Ue+A9Ndv/kcERS+svLORmLPqxeopu7eyppG1D9lTyfKTkXQXr9zU9X3tE+otfa9jYKe36D1YEFdmyVQJYFngX7Jn09zVLQAsAFZQOCCSAAAAMAQAnQEqEgASAD6RKKRSJaGlpZQAsBIJaQAEMq+QL5VDCP/zTtMqmTQAAP78RLP6uat3/5Nf/w157ZeKTEDv7Kj7/7Nh4l0LOCMjf5pJlcC+nNjyMfykRGt6/9X23yv/x3J6yC6HdqD9Pv/ONrmVpko9gKL4+Vb63/IQ9QFqF5z5QK732KZIKTB7/99MnV/gAAA=" alt="Next.js" title="Next.js" class="icon-img" />
+                    <span>Next.js</span>
                 </div>                
-                <div class="flex flex-col items-center">
-                    <i class="devicon-typescript-plain colored text-4xl mb-2" title="TypeScript" aria-label="TypeScript"></i>
-                    <span class="text-sm">TypeScript</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-javascript-plain colored text-4xl mb-2" title="JavaScript" aria-label="JavaScript"></i>
-                    <span class="text-sm">JavaScript</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-html5-plain colored text-4xl mb-2" title="HTML5" aria-label="HTML5"></i>
-                    <span class="text-sm">HTML5</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-css3-plain colored text-4xl mb-2" title="CSS3" aria-label="CSS3"></i>
-                    <span class="text-sm">CSS3</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <i class="devicon-sass-plain colored text-4xl mb-2" title="SASS" aria-label="SASS"></i>
-                    <span class="text-sm">SASS</span>
-                </div>
+                <div><i class="devicon-typescript-plain colored" title="TypeScript" aria-label="TypeScript"></i><span>TypeScript</span></div>
+                <div><i class="devicon-javascript-plain colored" title="JavaScript" aria-label="JavaScript"></i><span>JavaScript</span></div>
+                <div><i class="devicon-html5-plain colored" title="HTML5" aria-label="HTML5"></i><span>HTML5</span></div>
+                <div><i class="devicon-css3-plain colored" title="CSS3" aria-label="CSS3"></i><span>CSS3</span></div>
+                <div><i class="devicon-sass-plain colored" title="SASS" aria-label="SASS"></i><span>SASS</span></div>
             </div>
         </section>
 
-        <section class="projects bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-primary mb-4">Projetos</h2>
-            <ul class="space-y-4">
+        <section class="projects">
+            <h2>Projetos</h2>
+            <ul>
                 <li>
-                    <a href="https://www.linkedin.com/posts/caio-querino-1257622a5_nodejs-backend-api-activity-7322089565941321728-LNMR" target="_blank" rel="noopener" class="text-secondary hover:underline font-medium">CRUD com NodeJS + Insomnia</a>
-                    <p class="text-gray-600">API de cadastro de usuários testada com o Insomnia.</p>
+                    <a href="https://www.linkedin.com/posts/caio-querino-1257622a5_nodejs-backend-api-activity-7322089565941321728-LNMR" target="_blank" rel="noopener">CRUD com NodeJS + Insomnia</a>
+                    <p>API de cadastro de usuários testada com o Insomnia.</p>
                 </li>
                 <li>
-                    <a href="https://github.com/CaioQuerino/1_crud_basico" target="_blank" rel="noopener" class="text-secondary hover:underline font-medium">CRUD Básico com NodeJS</a>
-                    <p class="text-gray-600">Projeto com operações básicas de cadastro e listagem de dados.</p>
+                    <a href="https://github.com/CaioQuerino/1_crud_basico" target="_blank" rel="noopener">CRUD Básico com NodeJS</a>
+                    <p>Projeto com operações básicas de cadastro e listagem de dados.</p>
                 </li>
                 <li>
-                    <a href="https://github.com/CaioQuerino/API-s" target="_blank" rel="noopener" class="text-secondary hover:underline font-medium">RESTful API com NodeJS</a>
-                    <p class="text-gray-600">Exemplo de APIs RESTful com rotas organizadas e boas práticas.</p>
+                    <a href="https://github.com/CaioQuerino/API-s" target="_blank" rel="noopener">RESTful API com NodeJS</a>
+                    <p>Exemplo de APIs RESTful com rotas organizadas e boas práticas.</p>
                 </li>
                 <li>
-                    <a href="https://github.com/CaioQuerino/Task-Manager" target="_blank" rel="noopener" class="text-secondary hover:underline font-medium">RESTful API com NextJS</a>
-                    <p class="text-gray-600">APIs RESTful + POO</p>
+                    <a href="https://github.com/CaioQuerino/Task-Manager" target="_blank" rel="noopener">RESTful API com NextJS</a>
+                    <p>APIs RESTful + POO</p>
                 </li>
             </ul>
         </section>
 
-        <section class="education bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-primary mb-4">Educação</h2>
-            <p><strong class="font-semibold">Superior de Tecnologia em Gestão da Tecnologia da Informação</strong><br/>UNISUAM – Em andamento</p>
+        <section class="education">
+            <h2>Educação</h2>
+            <p><strong>Superior de Tecnologia em Gestão da Tecnologia da Informação</strong><br/>UNISUAM – Em andamento</p>
         </section>
 
-        <section class="certificates bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-primary mb-4">Certificados</h2>
-            <ul class="space-y-2">
-                <li><a href="https://www.unisuam.edu.br/documento-online/0070-0006b5f-003bf8f" target="_blank" rel="noopener" class="text-secondary hover:underline">Front-end - UNISUAM</a></li>
-                <li><a href="https://www.unisuam.edu.br/documento-online/0070-0006b60-003bf8f" target="_blank" rel="noopener" class="text-secondary hover:underline">Back-end - UNISUAM</a></li>
-                <li><a href="https://app.rocketseat.com.br/certificates/69aa544b-3252-4f40-9506-3ffd1f52ddc6" target="_blank" rel="noopener" class="text-secondary hover:underline">Git & GitHub</a></li>
-                <li><a href="https://app.rocketseat.com.br/certificates/6555a203-cb1d-426a-886d-88b0575eee4d" target="_blank" rel="noopener" class="text-secondary hover:underline">HTML e CSS</a></li>
-                <li><a href="https://app.rocketseat.com.br/certificates/5d72da2d-475e-4773-93c8-6b9399cc9873" target="_blank" rel="noopener" class="text-secondary hover:underline">JavaScript</a></li>
-                <li><a href="https://app.rocketseat.com.br/certificates/09414c68-47bd-4fb4-a537-db15146c50af" target="_blank" rel="noopener" class="text-secondary hover:underline">NodeJS</a></li>
-                <li><a href="https://www.credly.com/users/caio-querino-salustriano-marques" target="_blank" rel="noopener" class="text-secondary hover:underline">Credly</a></li>
+        <section class="certificates">
+            <h2>Certificados</h2>
+            <ul>
+                <li><a href="https://www.unisuam.edu.br/documento-online/0070-0006b5f-003bf8f" target="_blank" rel="noopener">Front-end - UNISUAM</a></li>
+                <li><a href="https://www.unisuam.edu.br/documento-online/0070-0006b60-003bf8f" target="_blank" rel="noopener">Back-end - UNISUAM</a></li>
+                <li><a href="https://app.rocketseat.com.br/certificates/69aa544b-3252-4f40-9506-3ffd1f52ddc6" target="_blank" rel="noopener">Git & GitHub</a></li>
+                <li><a href="https://app.rocketseat.com.br/certificates/6555a203-cb1d-426a-886d-88b0575eee4d" target="_blank" rel="noopener">HTML e CSS</a></li>
+                <li><a href="https://app.rocketseat.com.br/certificates/5d72da2d-475e-4773-93c8-6b9399cc9873" target="_blank" rel="noopener">JavaScript</a></li>
+                <li><a href="https://app.rocketseat.com.br/certificates/09414c68-47bd-4fb4-a537-db15146c50af" target="_blank" rel="noopener">NodeJS</a></li>
+                <li><a href="https://www.credly.com/users/caio-querino-salustriano-marques" target="_blank" rel="noopener">Credly</a></li>
             </ul>
         </section>
 
-        <section class="contact bg-white shadow-md rounded-lg p-6">
-            <h2 class="text-2xl font-bold text-primary mb-4">Contato</h2>
-            <ul class="space-y-2">
-                <li><a href="mailto:caio.querino.react@email.com" class="text-secondary hover:underline flex items-center">📧 <span class="ml-2">Email</span></a></li>
-                <li><a href="https://www.linkedin.com/in/caio-querino-1257622a5" target="_blank" rel="noopener" class="text-secondary hover:underline flex items-center">💼 <span class="ml-2">LinkedIn</span></a></li>
-                <li><a href="https://www.github.com/CaioQuerino" target="_blank" rel="noopener" class="text-secondary hover:underline flex items-center">🐱 <span class="ml-2">GitHub</span></a></li>
+        <section class="contact">
+            <h2>Contato</h2>
+            <ul>
+                <li><a href="mailto:caio.querino.react@email.com">📧 Email</a></li>
+                <li><a href="https://www.linkedin.com/in/caio-querino-1257622a5" target="_blank" rel="noopener">💼 LinkedIn</a></li>
+                <li><a href="https://www.github.com/CaioQuerino" target="_blank" rel="noopener">🐱 GitHub</a></li>
             </ul>
         </section>
     </main>
 
-    <footer class="bg-white shadow-md rounded-lg p-4 max-w-4xl mx-auto my-8 text-center text-gray-600">
+    <footer>
         <p>© 2025 Caio Querino. Todos os direitos reservados.</p>
     </footer>
 </body>
