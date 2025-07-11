@@ -34,114 +34,342 @@
 
     <!-- Ícones Devicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="profile">
-        <img src="./src/images/Caio.png" alt="Foto de Caio Querino" class="profile-photo">
-        <h1>Caio Querino</h1>
-        <h2>Desenvolvedor Backend e Fullstack em formação</h2>
-        <p>Desenvolvedor em formação, apaixonado por tecnologia e backend.</p>
-    </header>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Caio Querino</a>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Educação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            
+            <!-- Menu Hambúrguer -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="./src/images/Caio.png" alt="Foto de Caio Querino" class="profile-photo">
+                <div class="profile-info">
+                    <h1 class="hero-title">Caio Querino</h1>
+                    <h2 class="hero-subtitle">Desenvolvedor Backend e Fullstack em formação</h2>
+                    <p class="hero-description">Desenvolvedor em formação, apaixonado por tecnologia e backend.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="./src/docs/curriculo-caio-querino.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            Baixar Currículo
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScNsUaBUUbgqly91SukKfoQiRZdQj7cVDSjIdfF6IuCEdtwlg/viewform" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Projeto
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="mailto:caio.querino.react@email.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/caio-querino-1257622a5" class="social-link" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.github.com/CaioQuerino" class="social-link" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
     <main>
-        <section class="about">
-            <h2>Sobre Mim</h2>
-            <p>Meu primeiro contato com programação foi em 2010. Desde então, decidi seguir na área de T.I. com foco em desenvolvimento backend, mas também possuo conhecimentos em frontend.</p>
-            <div>
-                <a href="./src/docs/curriculo-caio-querino.pdf" class="btn-curriculo" download>
-                    <i class="devicon-pdf-plain" aria-hidden="true" style="margin-right: 0.5rem;"></i>
-                    Baixar Currículo (PDF)
-                </a>
-            </div>
-
-            <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScNsUaBUUbgqly91SukKfoQiRZdQj7cVDSjIdfF6IuCEdtwlg/viewform" class="btn-curriculo" target="_blank">Envie os requisitos do seu projeto</a>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2>Tecnologias</h2>
-            <div class="tech-icons">
-                <div><i class="devicon-nodejs-plain colored" title="Node.js" aria-label="Node.js"></i><span>Node.js</span></div>
-                <div><i class="devicon-express-original colored" title="Express.js" aria-label="Express.js"></i><span>Express.js</span></div>
-                <div class="tech-icon">
-                    <img src="https://fastify.dev/img/logos/fastify-white.svg" title="Fastify" alt="Fastify logo" class="fastify-icon" />
-                    <span>Fastify</span>
+        <!-- Seção Sobre -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Meu primeiro contato com programação foi em 2010. Desde então, decidi seguir na área de T.I. com foco em desenvolvimento backend, mas também possuo conhecimentos em frontend.</p>
+                        <p>Estou sempre em busca de novos desafios e oportunidades para aplicar meus conhecimentos e continuar crescendo profissionalmente na área de desenvolvimento.</p>
+                    </div>
                 </div>
-                <div><i class="devicon-docker-plain colored" title="Docker" aria-label="Docker"></i><span>Docker</span></div>
-                <div><i class="devicon-php-plain colored" title="PHP" aria-label="PHP"></i><span>PHP</span></div>
-                <div><i class="devicon-sequelize-plain colored" title="Sequelize" aria-label="Sequelize"></i><span>Sequelize</span></div>
-                <div class="tech-icon">
-                    <img src="https://www.prisma.io/images/favicon-32x32.png" alt="Prisma" title="Prisma" class="icon-img" />
-                    <span>Prisma</span>
-                </div>               
-                <div><i class="devicon-mysql-plain colored" title="MySQL" aria-label="MySQL"></i><span>MySQL</span></div>
-                <div><i class="devicon-postgresql-plain colored" title="PostgreSQL" aria-label="PostgreSQL"></i><span>PostgreSQL</span></div>
-                <div><i class="devicon-react-original colored" title="React.js" aria-label="React.js"></i><span>React.js</span></div>
-                <div class="tech-icon">
-                    <img src="data:image/webp;base64,UklGRjIBAABXRUJQVlA4WAoAAAAQAAAAEQAAEQAAQUxQSHkAAAARcBDZttMcupwqIj0x+kFEk5KefAEwnw7PQkRMAEBwzp9t+8ouPstJbfpFU4ULh1+/Ue+A9Ndv/kcERS+svLORmLPqxeopu7eyppG1D9lTyfKTkXQXr9zU9X3tE+otfa9jYKe36D1YEFdmyVQJYFngX7Jn09zVLQAsAFZQOCCSAAAAMAQAnQEqEgASAD6RKKRSJaGlpZQAsBIJaQAEMq+QL5VDCP/zTtMqmTQAAP78RLP6uat3/5Nf/w157ZeKTEDv7Kj7/7Nh4l0LOCMjf5pJlcC+nNjyMfykRGt6/9X23yv/x3J6yC6HdqD9Pv/ONrmVpko9gKL4+Vb63/IQ9QFqF5z5QK732KZIKTB7/99MnV/gAAA=" alt="Next.js" title="Next.js" class="icon-img" />
-                    <span>Next.js</span>
-                </div>                
-                <div><i class="devicon-typescript-plain colored" title="TypeScript" aria-label="TypeScript"></i><span>TypeScript</span></div>
-                <div><i class="devicon-javascript-plain colored" title="JavaScript" aria-label="JavaScript"></i><span>JavaScript</span></div>
-                <div><i class="devicon-html5-plain colored" title="HTML5" aria-label="HTML5"></i><span>HTML5</span></div>
-                <div><i class="devicon-css3-plain colored" title="CSS3" aria-label="CSS3"></i><span>CSS3</span></div>
-                <div><i class="devicon-sass-plain colored" title="SASS" aria-label="SASS"></i><span>SASS</span></div>
-                <div><i class="devicon-webpack-plain colored" title="Webpack" aria-label="Webpack"></i><span>Webpack</span></div>
             </div>
         </section>
 
-        <section class="projects">
-            <h2>Projetos</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/CaioQuerino/Pet_Shop_2.0" target="_blank" rel="noopener">Sistema de Gestão de Pet Shop</a>
-                    <p>Boas práticas com servidor Node, Prisma, Next.JS</p>
-                </li>
-                <li>
-                    <a href="https://github.com/CaioQuerino/api-de-blog-pessoal" target="_blank" rel="noopener">API de Blog Pessoal</a>
-                    <p>Express + Sequelize + Axios + Mysql</p>
-                    <p>Em andamento</p>
-                </li>
-                <li>
-                    <a href=https://github.com/CaioQuerino/servidores-nodejs/tree/main/projeto-jest-E2E" target="_blank" rel="noopener">Projetos de testes</a>
-                    <p>Testes com jest e E2E em simulação de API de produtos</p>
-                </li>
-                <li>
-                    <a href="https://github.com/CaioQuerino/Task-Manager" target="_blank" rel="noopener">RESTful API com NextJS</a>
-                    <p>APIs RESTful + POO</p>
-                </li>
-            </ul>
+        <!-- Seção Tecnologias -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Tecnologias</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-express-original colored"></i>
+                        <span>Express.js</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://fastify.dev/img/logos/fastify-white.svg" alt="Fastify" class="tech-icon-img" />
+                        <span>Fastify</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-docker-plain colored"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-php-plain colored"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-sequelize-plain colored"></i>
+                        <span>Sequelize</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="https://www.prisma.io/images/favicon-32x32.png" alt="Prisma" class="tech-icon-img" />
+                        <span>Prisma</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="tech-card">
+                        <img src="data:image/webp;base64,UklGRjIBAABXRUJQVlA4WAoAAAAQAAAAEQAAEQAAQUxQSHkAAAARcBDZttMcupwqIj0x+kFEk5KefAEwnw7PQkRMAEBwzp9t+8ouPstJbfpFU4ULh1+/Ue+A9Ndv/kcERS+svLORmLPqxeopu7eyppG1D9lTyfKTkXQXr9zU9X3tE+otfa9jYKe36D1YEFdmyVQJYFngX7Jn09zVLQAsAFZQOCCSAAAAMAQAnQEqEgASAD6RKKRSJaGlpZQAsBIJaQAEMq+QL5VDCP/zTtMqmTQAAP78RLP6uat3/5Nf/w157ZeKTEDv7Kj7/7Nh4l0LOCMjf5pJlcC+nNjyMfykRGt6/9X23yv/x3J6yC6HdqD9Pv/ONrmVpko9gKL4+Vb63/IQ9QFqF5z5QK732KZIKTB7/99MnV/gAAA=" alt="Next.js" class="tech-icon-img" />
+                        <span>Next.js</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-sass-plain colored"></i>
+                        <span>SASS</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="devicon-webpack-plain colored"></i>
+                        <span>Webpack</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="education">
-            <h2>Educação</h2>
-            <p><strong>Superior de Tecnologia em Gestão da Tecnologia da Informação</strong><br/>UNISUAM – Em andamento</p>
+        <!-- Seção Projetos -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Sistema de Gestão de Pet Shop</h3>
+                            <a href="https://github.com/CaioQuerino/Pet_Shop_2.0" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p>Boas práticas com servidor Node, Prisma, Next.JS</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">Next.js</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>API de Blog Pessoal</h3>
+                            <a href="https://github.com/CaioQuerino/api-de-blog-pessoal" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p>Express + Sequelize + Axios + MySQL</p>
+                        <div class="project-status">Em andamento</div>
+                        <div class="project-tags">
+                            <span class="tag">Express</span>
+                            <span class="tag">Sequelize</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Projetos de Testes</h3>
+                            <a href="https://github.com/CaioQuerino/servidores-nodejs/tree/main/projeto-jest-E2E" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p>Testes com Jest e E2E em simulação de API de produtos</p>
+                        <div class="project-tags">
+                            <span class="tag">Jest</span>
+                            <span class="tag">E2E</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>RESTful API com NextJS</h3>
+                            <a href="https://github.com/CaioQuerino/Task-Manager" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <p>APIs RESTful + POO</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">POO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="certificates">
-            <h2>Certificados</h2>
-            <ul>
-                <li><a href="https://www.unisuam.edu.br/documento-online/0070-0006b5f-003bf8f" target="_blank" rel="noopener">Front-end - UNISUAM</a></li>
-                <li><a href="https://www.unisuam.edu.br/documento-online/0070-0006b60-003bf8f" target="_blank" rel="noopener">Back-end - UNISUAM</a></li>
-                <li><a href="https://app.rocketseat.com.br/me/caio-querino-salustriano-marques-05344" target="_blank" rel="noopener">Rocketseat</a></li>
-                <li><a href="https://www.credly.com/users/caio-querino-salustriano-marques" target="_blank" rel="noopener">Credly</a></li>
-            </ul>
+        <!-- Seção Educação -->
+        <section id="education" class="section education">
+            <div class="container">
+                <h2 class="section-title">Educação</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-info">
+                            <h3>Superior de Tecnologia em Gestão da Tecnologia da Informação</h3>
+                            <p class="education-institution">UNISUAM</p>
+                            <p class="education-status">Em andamento</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificates">
+                    <h3>Certificados</h3>
+                    <div class="certificates-grid">
+                        <a href="https://www.unisuam.edu.br/documento-online/0070-0006b5f-003bf8f" target="_blank" class="certificate-link">
+                            <i class="fas fa-certificate"></i>
+                            Front-end - UNISUAM
+                        </a>
+                        <a href="https://www.unisuam.edu.br/documento-online/0070-0006b60-003bf8f" target="_blank" class="certificate-link">
+                            <i class="fas fa-certificate"></i>
+                            Back-end - UNISUAM
+                        </a>
+                        <a href="https://app.rocketseat.com.br/me/caio-querino-salustriano-marques-05344" target="_blank" class="certificate-link">
+                            <i class="fas fa-rocket"></i>
+                            Rocketseat
+                        </a>
+                        <a href="https://www.credly.com/users/caio-querino-salustriano-marques" target="_blank" class="certificate-link">
+                            <i class="fas fa-award"></i>
+                            Credly
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="contact">
-            <h2>Contato</h2>
-            <ul>
-                <li><a href="mailto:caio.querino.react@email.com">📧 Email</a></li>
-                <li><a href="https://www.linkedin.com/in/caio-querino-1257622a5" target="_blank" rel="noopener">💼 LinkedIn</a></li>
-                <li><a href="https://www.github.com/CaioQuerino" target="_blank" rel="noopener">🐱 GitHub</a></li>
-            </ul>
+        <!-- Seção Contato -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                <div class="contact-content">
+                    <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato!</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:caio.querino.react@email.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>caio.querino.react@email.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/caio-querino-1257622a5" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>LinkedIn</h4>
+                                <p>Caio Querino</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.github.com/CaioQuerino" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>GitHub</h4>
+                                <p>@CaioQuerino</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Caio Querino. Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Caio Querino. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
+
