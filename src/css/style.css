@@ -796,3 +796,121 @@ body {
   }
 }
 
+/* Seção Plataformas Freelancer */
+.freelance-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.freelance-content p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.platform-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.platform-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(0, 153, 204, 0.05));
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.platform-card:hover::before {
+  opacity: 1;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary-color);
+}
+
+.platform-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.platform-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.platform-info {
+  flex: 1;
+  text-align: left;
+}
+
+.platform-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-primary);
+}
+
+.platform-info p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.platform-arrow {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.platform-card:hover .platform-arrow {
+  transform: translateX(5px);
+}
+
+/* Responsividade para a seção de plataformas */
+@media (max-width: 768px) {
+  .platforms-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .platform-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .platform-info {
+    text-align: center;
+  }
+}
