@@ -51,7 +51,7 @@ Atualmente estou cursando o ensino superior com foco em tecnologia.
 - [Repositórios](https://github.com/CaioQuerino?tab=repositories)
 - [API de Blog Pessoal](https://github.com/CaioQuerino/api-de-blog-pessoal)
 - [Task (API JAVA)](https://github.com/CaioQuerino/Task)
-- [Pratizen (Aplicativo)(https://github.com/CaioQuerino/Pratizen)
+- [Pratizen (Aplicativo)](https://github.com/CaioQuerino/Pratizen)
 - [EcoT (SaaS)](https://github.com/CaioQuerino/EcoT)
 - [Pet Shop](https://github.com/CaioQuerino/Pet_Shop_2.0)
 - [DevLink](https://caioquerino.github.io/caio-dev-link/)
@@ -67,7 +67,12 @@ _Em andamento_
 
 ## Objetivos
 
-Estou sempre buscando aprender e me adaptar a novas tecnologias e tendências do mercado. Atualmente, meus estudos estão focados em Java. Meu objetivo é entregar soluções eficientes e que agreguem valor.Possuo sólida aplicação de Design Patterns, Arquitetura em Camadas, Princípios de Responsabilidade Única (SOLID) e boas práticas na construção de APIs REST. Tenho familiaridade com metodologias ágeis, como Scrum e Kanban, e experiência em serviços de cloud, utilizando a AWS (especificamente EC2, S3, Route 53, RDS, ECS e EKS) para deploy e operação de aplicações.Competências Adicionais:Versionamento de Código, Desenvolvimento e Integração de APIs, Deploy em Cloud.
+Estou sempre buscando aprender e me
+adaptar a novas tecnologias e tendências do mercado. Resolver pequenos problemas do
+mundo é meu objetivo. Atualmente, meus
+estudos estão focados em Java, com a meta
+de entregar soluções que resolvam
+problemas reais e agreguem valor.
 
 ---
 
