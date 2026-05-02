@@ -50,6 +50,7 @@ Atualmente estou cursando o ensino superior com foco em tecnologia.
 
 - [Repositórios](https://github.com/CaioQuerino?tab=repositories)
 - [API de Blog Pessoal](https://github.com/CaioQuerino/api-de-blog-pessoal)
+- [INECS (Landing Page)](https://github.com/CaioQuerino/inecs)
 - [Task (API JAVA)](https://github.com/CaioQuerino/Task)
 - [Pratizen (Aplicativo)](https://github.com/CaioQuerino/Pratizen)
 - [EcoT (SaaS)](https://github.com/CaioQuerino/EcoT)
