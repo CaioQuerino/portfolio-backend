@@ -32,6 +32,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 | Pratizen         | Aplicativo mobile focado em diminuir o desperdício.               | Ionic/angular, Farebase, TypeScript    | [Acessar](https://github.com/CaioQuerino/Pratizen)            |
 | INECS            | Landing Page institucional desenvolvida para empresa.                          | React, CSS                  | [Acessar](https://github.com/CaioQuerino/inecs)               |
 | Portal NEXORA            | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital.                          | Next, Supabase, TypeScript                  | [Acessar](https://portalnexora.vercel.app/)               |
+| Portifólio Full Stack            | Portfólio com meus projetos  | html, css, js                  | [Acessar](https://portalnexora.vercel.app/)               |
 
 ---
 
