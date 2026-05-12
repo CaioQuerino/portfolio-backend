@@ -33,7 +33,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 | INECS            | Landing Page institucional desenvolvida para empresa.                          | React, CSS                  | [Acessar](https://github.com/CaioQuerino/inecs)               |
 | SecureAR            | Landing Page que mostra as funcionalidades para a proteção  do smart glass.     | Node, Express, TypeScript, React                  | [Acessar](https://smartglass-app.vercel.app/)               |
 | Portal NEXORA            | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital.                          | Next, Supabase, TypeScript                  | [Acessar](https://portalnexora.vercel.app/)               |
-| Portifólio Full Stack            | Portfólio com meus projetos  | html, css, js                  | [Acessar](https://portalnexora.vercel.app/)               |
+| Portifólio Full Stack            | Portfólio com meus projetos  | html, css, js                  | [Acessar](https://caioquerino.github.io/portfolio-backend/)               |
 
 ---
 
