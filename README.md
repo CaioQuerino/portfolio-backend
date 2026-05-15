@@ -84,3 +84,4 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 |----------|--------|---------|
 | Pratizen | 🚧 Em desenvolvimento | [Link](https://github.com/CaioQuerino/pratizen.git) |
 | Portal NEXORA | ✅ Desenvolvimento em produção | [Link](https://portalnexora.vercel.app/) |
+| EcoT | 🚧 Desenvolvimento | [Link](https://github.com/caioquerino/ecot) |
