@@ -73,7 +73,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 
-  <a href="https://caioquerino.github.io/portfolio-backend/">
+  <a href="https://caioquerino.vercel.app/">
     <img src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
@@ -83,3 +83,4 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 | INECS | ✅ Produção | [Link](https://inecs.vercel.app/) |
 | Portal NEXORA | ✅ Desenvolvimento em produção | [Link](https://portalnexora.vercel.app) |
 | Guardiões Digitais | ✅ Produção | [Link](https://smartglass-app.vercel.app/) |
+| Portfólio | ✅ Produção | [Link](https://caioquerino.vercel.app/) |
