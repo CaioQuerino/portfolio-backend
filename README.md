@@ -13,6 +13,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="45" alt="Spring"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="45" alt="NodeJS"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="45" alt="React"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="45" alt="Next.js"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="45" alt="TypeScript"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" alt="JavaScript"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="45" alt="MySQL"/>
@@ -28,11 +29,8 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 
 | Projeto          | Descrição                                                                      | Tecnologias                 | Link                                                          |
 | ---------------- | ------------------------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------- |
-| EcoT             | Plataforma SaaS com foco em soluções sustentáveis e gerenciamento inteligente. | Java, Spring, React, Docker | [Acessar](https://github.com/CaioQuerino/EcoT)                |
-| Pratizen         | Aplicativo mobile focado em diminuir o desperdício.               | Ionic/angular, Farebase, TypeScript    | [Acessar](https://github.com/CaioQuerino/Pratizen)            |
 | INECS            | Landing Page institucional desenvolvida para empresa.                          | React, CSS                  | [Acessar](https://github.com/CaioQuerino/inecs)               |
-| SecureAR            | Landing Page que mostra as funcionalidades para a proteção  do smart glass.     | Node, Express, TypeScript, React                  | [Acessar](https://smartglass-app.vercel.app/)               |
-| Portal NEXORA            | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital.                          | Next, Supabase, TypeScript                  | [Acessar](https://portalnexora.vercel.app/)               |
+| Portal NEXORA            | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital.                          | Node, Next, Supabase, TypeScript                  | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA)               |
 | Portifólio Full Stack            | Portfólio com meus projetos  | html, css, js                  | [Acessar](https://caioquerino.github.io/portfolio-backend/)               |
 
 ---
@@ -82,6 +80,4 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 
 | Projeto | Status | Deploy |
 |----------|--------|---------|
-| Pratizen | 🚧 Em desenvolvimento | [Link](https://github.com/CaioQuerino/pratizen.git) |
-| Portal NEXORA | ✅ Desenvolvimento em produção | [Link](https://portalnexora.vercel.app/) |
-| EcoT | 🚧 Desenvolvimento | [Link](https://github.com/caioquerino/ecot) |
+| Portal NEXORA | ✅ Desenvolvimento em produção | [Link](portalnexora.vercel.app) |
