@@ -31,7 +31,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 | ---------------- | ------------------------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------- |
 | INECS            | Landing Page institucional desenvolvida para empresa.                          | React, CSS                  | [Acessar](https://github.com/CaioQuerino/inecs)               |
 | Portal NEXORA            | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital.                          | Node, Next, Supabase, TypeScript                  | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA)               |
-| Portifólio Full Stack            | Portfólio com meus projetos  | NextJS, React                  | [Acessar](https://github.com/CaioQuerino/portfolio-backend/)               |
+| Portifólio Full Stack            | Portfólio com meus projetos  | NextJS, React, Tailwind                  | [Acessar](https://github.com/CaioQuerino/portfolio-backend/)               |
 
 ---
 
