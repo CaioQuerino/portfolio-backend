@@ -27,11 +27,13 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 
 # 📌 Projetos Recentes
 
-| Projeto          | Descrição                                                                      | Tecnologias                 | Link                                                          |
-| ---------------- | ------------------------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------- |
-| INECS            | Landing Page institucional desenvolvida para empresa.                          | React, CSS                  | [Acessar](https://github.com/CaioQuerino/inecs)               |
-| Portal NEXORA            | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital.                          | Node, Next, Supabase, TypeScript                  | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA)               |
-| Portifólio Full Stack            | Portfólio com meus projetos  | NextJS, React, Tailwind                  | [Acessar](https://github.com/CaioQuerino/portfolio-backend/)               |
+
+| Projeto | Descrição | Tecnologias | Link |
+| :--- | :--- | :--- | :--- |
+| **Portal NEXORA** | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital. | Node, Next, Supabase, TypeScript | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA) |
+| **Auth-core** | Sistema de autenticação de usuário com base na hierarquia. | Java, Spring, Docker, Node | [Acessar](https://github.com/CaioQuerino/sistema-de-autenticacao) |
+| **INECS** | Landing Page institucional desenvolvida para empresa. | React, CSS | [Acessar](https://github.com/CaioQuerino/inecs) |
+| **Portfólio Full Stack** | Portfólio com meus projetos. | NextJS, React, Tailwind | [Acessar](https://github.com/CaioQuerino/portfolio-backend/) |
 
 ---
 
