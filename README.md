@@ -1,6 +1,6 @@
 # 👋 Olá, eu sou Caio Querino
 
-💻 Desenvolvedor Full Stack com foco em backend utilizando Java e Spring Boot.
+💻 Engenheiro de Software Backend | Java, Node.js & Cloud Computing.
 
 Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na construção de soluções modernas, escaláveis e voltadas para problemas reais.
 
@@ -30,20 +30,21 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 
 | Projeto | Descrição | Tecnologias | Link |
 | :--- | :--- | :--- | :--- |
-| **Portal NEXORA** | Educação tecnológica acessível e orientada ao mercado de trabalho, com receita direcionada a projetos de inclusão digital. | Node, Next, Supabase, TypeScript | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA) |
-| **Auth-core** | Sistema de autenticação de usuário com base na hierarquia. | Java, Spring, Docker, Node | [Acessar](https://github.com/CaioQuerino/sistema-de-autenticacao) |
-| **INECS** | Landing Page institucional desenvolvida para empresa. | React, CSS | [Acessar](https://github.com/CaioQuerino/inecs) |
-| **Portfólio Full Stack** | Portfólio com meus projetos. | NextJS, React, Tailwind | [Acessar](https://github.com/CaioQuerino/portfolio-backend/) |
+| **Portal NEXORA** | Plataforma de impacto social focada em inclusão digital. Implementação de arquitetura orientada a serviços com foco em **escalabilidade e conversão de leads**. | Node, Next, Supabase, TypeScript, Synapos, MVVM | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA) |
+| **Auth-core** | Motor de autenticação **Stateless** com segurança hierárquica (RBAC). Foco em **segurança defensiva**, auditoria de logs e integração CI/CD automatizada. | Java, Spring Boot, Spring Security + JWT, JPA, Design Patterns | [Acessar](https://github.com/CaioQuerino/sistema-de-autenticacao) |
+| **INECS** | Interface institucional otimizada para performance. Redução de latência de carregamento e aplicação de práticas avançadas de **SEO e Core Web Vitals**. | React, CSS Modules, Responsive Design | [Acessar](https://github.com/CaioQuerino/inecs) |
+| **Data-Driven Portfolio** | Vitrine técnica utilizando **Server Side Rendering (SSR)** para otimizar o tempo de resposta e indexação em motores de busca. | Next.js, React, Tailwind CSS | [Acessar](https://github.com/CaioQuerino/portfolio-backend/) |
 
 ---
 
 # 📚 Atualmente estudando
 
 * Spring Security
-* Microsserviços
-* Docker & AWS
+* Microsserviços & Processamento Distribuído (Apache Spark)
+* Serverless & Pipelines de Dados (AWS Lambda, SQS, S3, Event-Driven)
+* Observabilidade & Monitoramento (Dynatrace, ELK Stack)
 * Arquitetura de Software
-* DevOps
+* Cultura DevOps & CI/CD
 
 ---
 
