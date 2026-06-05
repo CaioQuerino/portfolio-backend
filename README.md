@@ -1,6 +1,6 @@
 # 👋 Olá, eu sou Caio Querino
 
-💻 Engenheiro de Software Backend | Java, Node.js & Cloud Computing.
+> 💻 Software Engineer Backend | Java, Node.js & Data Pipelines (AWS/Spark).
 
 Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na construção de soluções modernas, escaláveis e voltadas para problemas reais.
 
