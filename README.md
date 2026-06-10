@@ -32,7 +32,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 | :--- | :--- | :--- | :--- |
 | **Portal NEXORA** | Plataforma de impacto social focada em inclusão digital. Implementação de arquitetura orientada a serviços com foco em **escalabilidade e conversão de leads**. | Node, Next, Supabase, TypeScript, Synapos, MVVM | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA) |
 | **Auth-core** | Motor de autenticação **Stateless** com segurança hierárquica (RBAC). Foco em **segurança defensiva**, auditoria de logs e integração CI/CD automatizada. | Java, Spring Boot, Spring Security + JWT, JPA, Design Patterns | [Acessar](https://github.com/CaioQuerino/sistema-de-autenticacao) |
-| **INECS** | Interface institucional otimizada para performance. Redução de latência de carregamento e aplicação de práticas avançadas de **SEO e Core Web Vitals**. | React, CSS Modules, Responsive Design | [Acessar](https://github.com/CaioQuerino/inecs) |
+| **spark-log-analytics-pipeline** | Projeto de Engenharia de Dados Distribuídos, focado na construção de pipelines resilientes e escaláveis utilizando PySpark e integração profunda com o ecossistema AWS. | PySpark, AWS Boto3, Docker, ScyllaDB, MongoDB, PostgreSQL, Node.js, Dynatrace, AWS S3 | [Acessar](https://github.com/CaioQuerino/spark-log-analytics-pipeline) |
 | **Data-Driven Portfolio** | Vitrine técnica utilizando **Server Side Rendering (SSR)** para otimizar o tempo de resposta e indexação em motores de busca. | Next.js, React, Tailwind CSS | [Acessar](https://github.com/CaioQuerino/portfolio-backend/) |
 
 ---
@@ -83,7 +83,5 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 
 | Projeto | Status | Deploy |
 |----------|--------|---------|
-| INECS | ✅ Produção | [Link](https://inecs.vercel.app/) |
 | Portal NEXORA | ✅ Desenvolvimento em produção | [Link](https://portalnexora.vercel.app) |
-| Guardiões Digitais | ✅ Produção | [Link](https://smartglass-app.vercel.app/) |
 | Portfólio | ✅ Produção | [Link](https://caioquerino.vercel.app/) |
