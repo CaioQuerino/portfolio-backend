@@ -16,6 +16,8 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="45" alt="Next.js"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="45" alt="TypeScript"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" alt="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" alt="Python"/>  
+  <img src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg" width="45" alt="Apache Spark"/>  
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="45" alt="MySQL"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="45" alt="PostgreSQL"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="45" alt="Docker"/>
@@ -31,7 +33,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas** e estou focado na co
 | Projeto | Descrição | Tecnologias | Link |
 | :--- | :--- | :--- | :--- |
 | **Portal NEXORA** | Plataforma de impacto social focada em inclusão digital. Implementação de arquitetura orientada a serviços com foco em **escalabilidade e conversão de leads**. | Node, Next, Supabase, TypeScript, Synapos, MVVM | [Acessar](https://github.com/Instituto-Nexora/Portal_NEXORA) |
-| **ecommerce-etl-pipeline** | Projeto de Engenharia de Dados focado na construção de pipelines ETL escaláveis para processamento de logs em larga escala. Utiliza Apache Spark para processamento distribuído, AWS S3 como Data Lake e ScyllaDB para armazenamento de métricas analíticas, aplicando práticas de anonimização de dados e observabilidade. | Python, Apache Spark, ScyllaDB, Docker, Docker Compose, AWS S3, PySpark, Cassandra Connector | [Acessar](https://github.com/CaioQuerino/ecommerce-etl-pipeline) | Python, Apache Spark, ScyllaDB, Docker, Docker Compose, AWS S3, PySpark, Cassandra Connector | [Acessar](https://github.com/CaioQuerino/ecommerce-etl-pipeline) |
+| **Unified-Log-Processor-Pipelines** | Projeto de Engenharia de Dados focado na construção de pipelines ETL escaláveis para processamento de logs em larga escala. Utiliza Apache Spark para processamento distribuído, AWS S3 como Data Lake e ScyllaDB para armazenamento de métricas analíticas, aplicando práticas de anonimização de dados e observabilidade. | Python, Apache Spark, ScyllaDB, Docker, Docker Compose, AWS S3, PySpark, Cassandra Connector | [Acessar](https://github.com/CaioQuerino/Unified-Log-Processor-Pipelines) | Python, Apache Spark, ScyllaDB, Docker, Docker Compose, AWS S3, PySpark, Cassandra Connector | [Acessar](https://github.com/CaioQuerino/ecommerce-etl-pipeline) |
 | **spark-log-analytics-pipeline** | Projeto de Engenharia de Dados Distribuídos, focado na construção de pipelines resilientes e escaláveis utilizando PySpark e integração profunda com o ecossistema AWS. | PySpark, AWS Boto3, Docker, ScyllaDB, MongoDB, PostgreSQL, Node.js, Dynatrace, AWS S3 | [Acessar](https://github.com/CaioQuerino/spark-log-analytics-pipeline) |
 | **Data-Driven Portfolio** | Vitrine técnica utilizando **Server Side Rendering (SSR)** para otimizar o tempo de resposta e indexação em motores de busca. | Next.js, React, Tailwind CSS | [Acessar](https://github.com/CaioQuerino/portfolio-backend/) |
 
