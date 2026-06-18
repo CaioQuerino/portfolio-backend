@@ -2,13 +2,13 @@
 
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import Head from 'next/head';
+import Image from "next/image";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-  
+
   const heroTitleRef = useRef<HTMLHeadingElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -36,44 +36,47 @@ export default function Home() {
       observer.observe(el);
     });
 
+    const particles: HTMLDivElement[] = [];
     if (heroRef.current) {
       for (let i = 0; i < 50; i++) {
         const particle = document.createElement("div");
         particle.className = "particle";
         particle.style.cssText = `position: absolute; width: 2px; height: 2px; background: rgba(0, 212, 255, 0.3); border-radius: 50%; pointer-events: none; left: ${Math.random() * 100}%; top: ${Math.random() * 100}%; animation: float ${3 + Math.random() * 4}s ease-in-out infinite; animation-delay: ${Math.random() * 2}s;`;
         heroRef.current.appendChild(particle);
+        particles.push(particle);
       }
     }
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
+      particles.forEach(p => p.remove());
+    };
   }, []);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const projects = [
     {
-      title: "Sistema de Gestão de Pet Shop",
-      description: "Boas práticas com servidor Node, Prisma, Next.JS",
-      tags: ["Node.js", "Prisma", "Next.js"],
-      link: "https://github.com/CaioQuerino/Pet_Shop_2.0"
-    },
-    {
-      title: "Pratizen",
-      description: "Projeto social desenvolvido com Angular e Firebase, integrando APIs ViaCep e Telegram",
-      tags: ["Angular", "POO", "Firebase", "API ViaCep", "API Telegram"],
-      link: "https://github.com/CaioQuerino/pratizen",
+      title: "Portal NEXORA - FullStack",
+      description: "Plataforma de impacto social focada em inclusão digital. Implementação de arquitetura orientada a serviços com foco em escalabilidade e conversão de leads .",
+      tags: ["Node", "Next", "Supabase", "TypeScript", "Padrão MVVM"],
+      link: "https://github.com/Instituto-Nexora/Portal_NEXORA",
       status: "Em andamento"
     },
     {
-      title: "INECS",
-      description: "Landing Page institucional desenvolvida para empresa.",
-      tags: ["React", "CSS"],
-      link: "https://github.com/CaioQuerino/inecs"
+      title: "Pipelines unificados de processamento de logs",
+      description: "Projeto de Engenharia de Dados focado na construção de pipelines ETL escaláveis ​​para processamento de logs em larga escala. Utilize Apache Spark para processamento distribuído, AWS S3 como Data Lake e ScyllaDB para armazenamento de análises analíticas, aplicando práticas de anonimização de dados e observabilidade.",
+      tags: ["Python", "Apache Spark", "AWS Boto3", "AWS S3", "ScyllaDB", "Docker-Compose",],
+      link: "https://github.com/CaioQuerino/Unified-Log-Processor-Pipelines",
+      status: "Finalizado"
     },
     {
-      title: "Portal NEXORA",
-      description: "Educação tecnológica acessível e orientada ao mercado de trabalho.",
-      tags: ["Node", "Next", "Supabase", "TypeScript"],
-      link: "https://github.com/Instituto-Nexora/Portal_NEXORA"
+      title: "Pipeline de análise de logs do Spark",
+      description: "Projeto de Engenharia de Dados Distribuídos, focado na construção de pipelines resilientes e escaláveis ​​utilizando PySpark e integração profunda com o ecossistema AWS.",
+      tags: ["Python", "Apache Spark", "AWS Boto3", "AWS S3", "MongoDB", "PostgreSQL", "Node.js", "Dynatrace", "ScyllaDB", "Docker-Compose",],
+      link: "https://github.com/CaioQuerino/spark-log-analytics-pipeline",
+      status: "Finalizado"
     }
   ];
 
@@ -81,6 +84,8 @@ export default function Home() {
     { name: "Java", icon: "java" },
     { name: "Spring", icon: "spring" },
     { name: "NodeJS", icon: "nodejs" },
+    { name: "Python", icon: "python" },
+    { name: "Apache Spark", icon: "apachespark" },
     { name: "React", icon: "react" },
     { name: "Next.js", icon: "nextjs" },
     { name: "TypeScript", icon: "typescript" },
@@ -95,11 +100,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Caio Querino | Desenvolvedor Backend Java | Spring | AWS</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-      </Head>
-
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 border-b border-[#00d4ff]/20 backdrop-blur-md ${scrolled ? "bg-[#0f0f23]/98 shadow-[0_2px_20px_rgba(0,0,0,0.3)]" : "bg-[#0f0f23]/95"}`}>
         <div className="max-w-[1200px] w-full mx-auto px-4 sm:px-8 flex justify-between items-center h-[70px]">
           <div className="text-2xl font-bold">
@@ -127,18 +127,26 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,<svg_xmlns=%22http://www.w3.org/2000/svg%22_viewBox=%220_0_100_100%22><defs><pattern_id=%22grid%22_width=%2210%22_height=%2210%22_patternUnits=%22userSpaceOnUse%22><path_d=%22M_10_0_L_0_0_0_10%22_fill=%22none%22_stroke=%22%2300d4ff%22_stroke-width=%220.5%22_opacity=%220.1%22/></pattern></defs><rect_width=%22100%22_height=%22100%22_fill=%22url(%23grid)%22/></svg>')] opacity-20 pointer-events-none" style={{ animation: 'float 20s ease-in-out infinite' }}></div>
         <div className="relative z-10 text-center flex flex-col items-center px-4 w-full">
           <div className="flex flex-col items-center gap-8">
-            <img src="/images/Caio.png" alt="Foto de Caio Querino" className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] rounded-full object-cover border-4 border-[#00d4ff] shadow-[0_0_30px_rgba(0,212,255,0.4)] hover:scale-105 hover:shadow-[0_0_50px_rgba(0,212,255,0.6)] transition-all duration-300" style={{ animation: 'pulse-glow 2s ease-in-out infinite' }} />
+            <Image
+              src="/images/Caio.png"
+              alt="Foto de Caio Querino"
+              width={200}
+              height={200}
+              priority
+              className="rounded-full object-cover border-4 border-[#00d4ff] shadow-[0_0_30px_rgba(0,212,255,0.4)] hover:scale-105 hover:shadow-[0_0_50px_rgba(0,212,255,0.6)] transition-all duration-300 w-[150px] h-[150px] sm:w-[200px] sm:h-[200px]"
+              style={{ animation: 'pulse-glow 2s ease-in-out infinite' }}
+            />
             <div>
               <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[#00d4ff] to-[#0099cc] bg-clip-text text-transparent mb-2" ref={heroTitleRef}>Caio Querino</h1>
               <h2 className="text-xl md:text-2xl text-[#a8a8a8] mb-4">Desenvolvedor Backend Java | Spring | AWS</h2>
               <p className="text-lg text-[#a8a8a8] mb-8 max-w-[600px] mx-auto">24 anos · Formando em Análise e Desenvolvimento de Sistemas · Foco em Java, Spring, APIs REST, AWS e boas práticas.</p>
-              
+
               <div className="flex flex-wrap gap-4 justify-center mb-8">
                 <a href="/docs/Caio_Querino_Curriculo_FullStack.pdf" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#0099cc] text-white font-semibold hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,212,255,0.2)] transition-all duration-300" download>
                   <i className="fas fa-download"></i> Baixar Currículo
                 </a>
               </div>
-              
+
               <div className="flex gap-4 justify-center">
                 <a href="mailto:caioquerino@souunisuam.com.br" className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#00d4ff]/10 text-[#00d4ff] border border-[#00d4ff]/20 hover:bg-[#00d4ff] hover:text-white hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,212,255,0.2)] transition-all duration-300 text-xl" title="Email"><i className="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/caio-querino-1257622a5" className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#00d4ff]/10 text-[#00d4ff] border border-[#00d4ff]/20 hover:bg-[#00d4ff] hover:text-white hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,212,255,0.2)] transition-all duration-300 text-xl" target="_blank" title="LinkedIn"><i className="fab fa-linkedin"></i></a>
@@ -169,8 +177,8 @@ export default function Home() {
               {technologies.map((tech) => (
                 <div key={tech.name} className="flex flex-col items-center gap-2 group tech-card">
                   <div className="w-16 h-16 flex items-center justify-center bg-[#1a1a2e] rounded-xl border border-[#00d4ff]/20 group-hover:border-[#00d4ff] transition-all duration-300 group-hover:-translate-y-2">
-                    <img 
-                      src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.icon}/${tech.icon}-original.svg`} 
+                    <img
+                      src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.icon}/${tech.icon}-original.svg`}
                       alt={tech.name}
                       className="w-10 h-10"
                     />
@@ -249,7 +257,7 @@ export default function Home() {
                   <i className="fab fa-linkedin"></i>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">LinkedIn</h3>
-                <p className="text-[#a8a8a8]">in/caio-querino</p>
+                <p className="text-[#a8a8a8]">in/caio-querino-1257622a5/</p>
               </a>
               <a href="https://www.github.com/CaioQuerino" target="_blank" className="contact-method p-8 rounded-2xl bg-[#1a1a2e] border border-[#00d4ff]/10 hover:border-[#00d4ff]/40 transition-all duration-300 text-center group">
                 <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center rounded-full bg-[#00d4ff]/10 text-[#00d4ff] text-2xl group-hover:bg-[#00d4ff] group-hover:text-white transition-all">
