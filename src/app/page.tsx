@@ -65,6 +65,13 @@ export default function Home() {
       status: "Em andamento"
     },
     {
+      title: "Banco Digital",
+      description: "API REST para gerenciamento de contas bancárias, clientes e operações financeiras. Implementa regras de negócio para contas digitais, persistência relacional com JPA, validações, controle transacional e arquitetura em camadas utilizando Spring Boot.",
+      tags: ["Java 21", "Spring Web", "Spring Data JPA", "Spring Security", "lombok", "Validation", "PostgreSQL", "Padrão MVC"],
+      link: "https://github.com/Instituto-Nexora/Portal_NEXORA",
+      status: "Em andamento"
+    },
+    {
       title: "Pipelines unificados de processamento de logs",
       description: "Projeto de Engenharia de Dados focado na construção de pipelines ETL escaláveis ​​para processamento de logs em larga escala. Utilize Apache Spark para processamento distribuído, AWS S3 como Data Lake e ScyllaDB para armazenamento de análises analíticas, aplicando práticas de anonimização de dados e observabilidade.",
       tags: ["Python", "Apache Spark", "AWS Boto3", "AWS S3", "ScyllaDB", "Docker-Compose",],
