@@ -67,7 +67,7 @@ export default function Home() {
     {
       title: "Banco Digital",
       description: "API REST para gerenciamento de contas bancárias, clientes e operações financeiras. Implementa regras de negócio para contas digitais, persistência relacional com JPA, validações, controle transacional e arquitetura em camadas utilizando Spring Boot.",
-      tags: ["Java 21", "Spring Web", "Spring Data JPA", "Spring Security", "lombok", "Validation", "PostgreSQL", "Padrão MVC"],
+      tags: ["Java 21", "Spring Web", "Spring Data JPA", "Spring Security", "JWT", "Swagger", "lombok", "Validation", "PostgreSQL", "Padrão MVC"],
       link: "https://github.com/CaioQuerino/bancodigital",
       status: "Em andamento"
     },
