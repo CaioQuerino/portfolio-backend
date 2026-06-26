@@ -150,7 +150,7 @@ export default function Home() {
               <p className="text-lg text-[#a8a8a8] mb-8 max-w-[600px] mx-auto">24 anos · Formando em Análise e Desenvolvimento de Sistemas · Foco em Java, Spring, APIs REST, AWS e boas práticas.</p>
 
               <div className="flex flex-wrap gap-4 justify-center mb-8">
-                <a href="docs/Caio_Querino_Curriculo_MPRJ.pdf" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#0099cc] text-white font-semibold hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,212,255,0.2)] transition-all duration-300" download>
+                <a href="/Caio_Querino_Curriculo_MPRJ.pdf" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-br from-[#00d4ff] to-[#0099cc] text-white font-semibold hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,212,255,0.2)] transition-all duration-300" download>
                   <i className="fas fa-download"></i> Baixar Currículo
                 </a>
               </div>
